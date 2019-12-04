@@ -1,0 +1,11 @@
+{
+  "name": "animeme-web-components",
+  "version": "0.1.0",
+  "description": "Renderer for the Animeme programming language.",
+  "module": "components/index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
