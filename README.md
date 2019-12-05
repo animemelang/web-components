@@ -23,3 +23,9 @@ npm start
 
 Then open your browser to `http://localhost:8080/examples` and pick a demo.
 You may use the `custom.html` demo to write your own.
+
+## License
+
+This project is licensed under the MIT. See the [LICENSE][] file for details.
+
+[LICENSE]: ./LICENSE
