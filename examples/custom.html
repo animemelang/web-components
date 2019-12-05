@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Animemelang</title>
+    <script type="module" src="../components/index.mjs"></script>
+    <style>
+      .input-wrapper {
+        float: right;
+        position: fixed;
+        right: 0;
+        z-index: 1;
+      }
+
+      .input-wrapper textarea {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="input-wrapper">
+      <textarea id="program" rows="30" cols="80"><anm-program>
+  <anm-noop></anm-noop>
+</anm-program></textarea>
+    </div>
+    <div>
+      <output id="render"></output>
+    </div>
+
+    <script>
+      const program = document.getElementById("program");
+      const render = document.getElementById("render");
+
+      function updateOutput() {
+        render.innerHTML = program.value;
+      }
+
+      updateOutput();
+      program.addEventListener("input", updateOutput);
+    </script>
+  </body>
+</html>
