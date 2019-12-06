@@ -3,3 +3,4 @@ export { default as AnimemeSayElement } from "./say.mjs";
 export { default as AnimemeExpressionElement } from "./expression.mjs";
 export { default as AnimemeNoopElement } from "./noop.mjs";
 export { default as AnimemeTestElement } from "./test.mjs";
+export { default as AnimemeLoopElement } from "./loop.mjs";
