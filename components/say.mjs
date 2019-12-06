@@ -24,6 +24,10 @@ template.innerHTML = `
     height: 480px;
   }
 
+  img {
+    display: block;
+  }
+
   #text {
     display: block;
     position: absolute;

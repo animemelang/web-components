@@ -25,6 +25,10 @@ template.innerHTML = `
     height: 480px;
   }
 
+  img {
+    display: block;
+  }
+
   #value {
     display: inline-block;
     position: absolute;

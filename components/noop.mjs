@@ -22,6 +22,10 @@ template.innerHTML = `
     width: 853px;
     height: 480px;
   }
+
+  img {
+    display: block;
+  }
 </style>
 <img src="../resources/statements/noop/noop.png" width="853" height="480" />
 `;
