@@ -1,4 +1,5 @@
 const template = document.createElement("template");
+const baseUrl = import.meta.url.split("/").slice(0, -1).join("/");
 
 /**
  * The Animeme test condition statement.
@@ -46,7 +47,7 @@ template.innerHTML = `
     width: 100%;
   }
 </style>
-<img src="../resources/statements/test/test.png" width="853" height="480" />
+<img src="${baseUrl}/test.png" width="853" height="480" />
 <slot id="value" name="value"></slot>
 <div id="test-wrapper">Is this <slot id="test" name="test">a pigeon</slot>?</div>
 `;
