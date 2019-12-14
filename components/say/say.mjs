@@ -1,4 +1,5 @@
 const template = document.createElement("template");
+const baseUrl = import.meta.url.split("/").slice(0, -1).join("/");
 
 /**
  * The Animeme say statement.
@@ -36,7 +37,7 @@ template.innerHTML = `
     width: 100%;
   }
 </style>
-<img src="../resources/statements/say/say.png" width="853" height="480" />
+<img src="${baseUrl}/say.png" width="853" height="480" />
 <slot id="text"></slot>
 `;
 

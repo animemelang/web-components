@@ -1,4 +1,5 @@
 const template = document.createElement("template");
+const baseUrl = import.meta.url.split("/").slice(0, -1).join("/");
 
 /**
  * The Animeme loop statement.
@@ -46,11 +47,11 @@ template.innerHTML = `
   }
 </style>
 <div id="loop-begin">
-  <img src="../resources/statements/loop/loop-begin.png" width="853" height="480" />
+  <img src="${baseUrl}/loop-begin.png" width="853" height="480" />
   <slot id="until" name="until"></slot>
 </div>
 <slot id="body"></slot>
-<div id="loop-end"><img src="../resources/statements/loop/loop-end.png" width="853" height="480" /></div>
+<div id="loop-end"><img src="${baseUrl}/loop-end.png" width="853" height="480" /></div>
 `;
 
 window.customElements.define("anm-loop", AnimemeLoopElement);
